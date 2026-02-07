@@ -2,7 +2,7 @@ FROM ghcr.io/braccae/alma:latest AS base
 
 FROM base AS final
 
-RUN sudo dnf install -y \
+RUN dnf install -y \
     https://download.postgresql.org/pub/repos/yum/reporpms/EL-10-$(uname -m)/pgdg-redhat-repo-latest.noarch.rpm \
     https://download.postgresql.org/pub/repos/yum/reporpms/non-free/EL-10-$(uname -m)/pgdg-redhat-nonfree-repo-latest.noarch.rpm
 
