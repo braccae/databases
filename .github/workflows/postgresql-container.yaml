@@ -12,6 +12,8 @@ on:
     paths:
       - "postgresql.Containerfile"
       - ".github/workflows/postgresql-container.yaml"
+  schedule:
+    - cron: '0 0 */3 * *'
   workflow_dispatch:
 
 env:
