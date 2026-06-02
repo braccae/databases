@@ -10,8 +10,8 @@ This repository contains Containerfiles for building bootc-compatible images for
 
 Currently available:
 
-- **PostgreSQL** ✅ (In development)
-- **MariaDB** (Planned)
+- **PostgreSQL** ✅ (Done!)
+- **MariaDB** (In development)
 - **MongoDB** (Planned)
 - **InfluxDB** (Planned)
 
@@ -54,10 +54,6 @@ Bootc (Boot Container) is a tool for creating bootable container images that can
 ## Image Verification
 
 This repository includes `cosign.pub` for verifying image signatures. Signed images ensure integrity and authenticity of the database container images.
-
-## Development Status
-
-🚧 **Early Development** - PostgreSQL support is currently in development. Other database systems will be added in subsequent releases.
 
 ## Contributing
 
