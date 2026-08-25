@@ -1,12 +1,6 @@
 name: Postgresql Container
 
 on:
-  workflow_run:
-    workflows: ["Alma Container"]
-    types:
-      - completed
-    branches:
-      - main
   push:
     branches: ["main"]
     paths:
@@ -15,6 +9,8 @@ on:
   schedule:
     - cron: '0 0 */3 * *'
   workflow_dispatch:
+  repository_dispatch:
+    types: [alma-container-built]
 
 env:
   REGISTRY: ghcr.io
